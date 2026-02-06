@@ -25,25 +25,35 @@ const classifyScore = (score) => {
 const Student = ({ id, name, score, onLog, onRemove }) => {
   const category = classifyScore(score);
   const isExcellent = score >= 90;
+  const isTopScore = score >= 95;  // ← ADD THIS LINE
 
   return (
-    <div style={{
-      border: "1px solid #D4A0A0",
-      marginBottom: "8px",
+    <div style={{ 
+      border: "1px solid #ccc", 
+      marginBottom: "8px", 
       padding: "16px",
       borderRadius: "8px",
-      backgroundColor: "#FFF5F5"
+      backgroundColor: "#f9f9f9"
     }}>
-      <h3 style={{ margin: "0 0 8px 0", color: "#A51C30" }}>{name}</h3>
+      <h3 style={{ margin: "0 0 8px 0", color: "#333" }}>{name}</h3>
       <p style={{ margin: "4px 0" }}>Score: <strong>{score}</strong></p>
       <p style={{ margin: "4px 0" }}>Category: <strong>{category}</strong></p>
       {isExcellent && (
         <p style={{ 
-          color: "#A51C30",
+          color: "green", 
           fontWeight: "bold",
           margin: "8px 0 0 0" 
         }}>
           🌟 Excellent!
+        </p>
+      )}
+      {isTopScore && (  // ← ADD THIS ENTIRE BLOCK
+        <p style={{ 
+          color: "purple", 
+          fontWeight: "bold",
+          margin: "8px 0 0 0" 
+        }}>
+          🏆 Top Performer
         </p>
       )}
       
