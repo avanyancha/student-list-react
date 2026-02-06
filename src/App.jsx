@@ -187,7 +187,7 @@ const App = () => {
           style={{ width: "80px", height: "80px", marginBottom: "8px" }}
         />
         <h1 style={{ color: "white", margin: "0", fontSize: "24px" }}>
-          Student List
+          Student Dashboard
         </h1>
         <p style={{ margin: "4px 0 0 0", fontSize: "14px", opacity: 0.9 }}>
           University of the East
