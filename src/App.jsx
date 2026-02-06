@@ -235,7 +235,7 @@ const App = () => {
         borderRadius: "8px",
         border: "1px solid #D4A0A0"
       }}>
-        <h2 style={{ marginTop: 0, color: "#A51C30" }}>Add Student</h2>
+        <h2 style={{ marginTop: 0, color: "#A51C30" }}>Add New Student</h2>
         
         <div style={{ marginBottom: "12px" }}>
           <input
